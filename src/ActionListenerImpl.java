@@ -24,11 +24,13 @@ public class ActionListenerImpl implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         button.setBackground(Color.GREEN);
         button.setText("You did it!");
+        button.setFont(new Font("SansSerif", Font.PLAIN | Font.BOLD, 16));
     }
 
     private void buttonInit() {
         button = new JButton("Click me!");
         button.setBackground(Color.ORANGE);
+        button.setFont(new Font ("TimesRoman", Font.BOLD | Font.ITALIC, 20));
         button.setBorder(BorderFactory.createLineBorder(Color.BLACK, 25));
         button.addActionListener(this);
 
